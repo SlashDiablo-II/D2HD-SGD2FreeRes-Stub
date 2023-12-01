@@ -1,0 +1,68 @@
+/**
+ * SlashGaming D2HD Stub
+ * Copyright (C) 2023  Mir Drualga
+ *
+ * This file is part of SlashGaming D2HD Stub.
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published
+ * by the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#ifndef D2HD_STUB_RC_
+#define D2HD_STUB_RC_
+
+#include <windows.h>
+
+// VERSION INFORMATION
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+VS_VERSION_INFO    VERSIONINFO
+  FILEVERSION      3,0,0,0
+  PRODUCTVERSION   3,0,0,0
+  FILEFLAGSMASK    0x3fL // VS_FFI_FILEFLAGSMASK
+#ifdef _DEBUG
+  FILEFLAGS        0x1L  // VS_FF_DEBUG|VS_FF_PRIVATEBUILD|VS_FF_PRERELEASE
+#else
+  FILEFLAGS        0x0L  // final version
+#endif
+  FILEOS           VOS_NT_WINDOWS32
+  FILETYPE         VFT_APP
+  FILESUBTYPE      VFT2_UNKNOWN // not used
+{
+  BLOCK "StringFileInfo"
+  {
+    BLOCK "040904E4" // Lang=US English, CharSet=Windows Multilingual
+    {
+      VALUE "Build",            "2023-12-01"
+      VALUE "Comments",         "Licensed under Affero GPL v3+."
+      VALUE "CompanyName",      "SlashGaming"
+      VALUE "Developer",        "Mir Drualga"
+      VALUE "FileDescription",  "Stub to load SGD2FreeRes."
+      VALUE "InternalName",     "SlashGaming D2HD Stub"
+      VALUE "LegalCopyright",   "Copyright (C) 2023  Mir Drualga"
+      VALUE "LegalTrademarks",  "All rights reserved."
+      VALUE "PrivateBuild",     ""
+      VALUE "ProductName",      "D2HD Stub"
+      VALUE "ProductVersion",   "3.0.0.0"
+      VALUE "SpecialBuild",     ""
+      VALUE "Support",          "reddit.com/r/SlashDiablo"
+    } // BLOCK "040904E4"
+  } // BLOCK "StringFileInfo"
+  BLOCK "VarFileInfo"
+  {
+    VALUE "Translation", 0x409, 1252 // 1252 = 0x04E4
+  } // BLOCK "VarFileInfo"
+}
+
+#endif // D2HD_STUB_RC_
+
